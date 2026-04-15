@@ -103,17 +103,20 @@ export default function Hero() {
             <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </a>
           
-          <div className="flex gap-3">
-            {[FiGithub, FiLinkedin, FiTwitter, FiMail].map((Icon, i) => (
-              <a
-                key={i}
-                href="#"
-                className="p-3 bg-gray-900 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 text-gray-300 hover:text-orange-400 border border-gray-800 group"
-              >
-                <Icon size={20} className="group-hover:rotate-12 transition-transform" />
-              </a>
-            ))}
-          </div>
+<div className="flex gap-3">
+  <a href="https://github.com/Naiodere" target="_blank" rel="noopener noreferrer" 
+     className="p-3 bg-gray-900 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 text-gray-300 hover:text-orange-400 border border-gray-800 group">
+    <FiGithub size={20} className="group-hover:rotate-12 transition-transform" />
+  </a>
+  <a href="#" 
+     className="p-3 bg-gray-900 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 text-gray-300 hover:text-orange-400 border border-gray-800 group">
+    <FiLinkedin size={20} className="group-hover:rotate-12 transition-transform" />
+  </a>
+  <a href="mailto:naomidereje1221@gmail.com"
+     className="p-3 bg-gray-900 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 text-gray-300 hover:text-orange-400 border border-gray-800 group">
+    <FiMail size={20} className="group-hover:rotate-12 transition-transform" />
+  </a>
+</div>
         </motion.div>
       </div>
 
